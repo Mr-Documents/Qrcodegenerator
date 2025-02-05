@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr code generator</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<style>
+    .txthover{
+        transition: .3s;
+    }
+    .txthover:hover{
+    color: white;
+    }
+
+    .width100{
+    min-height: 70vh;
+}
+
+.centerdiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.centerdivfora{
+    display: flex;
+    justify-content: center;
+    
+}
+input{
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  bgnav">
+        <div class="container-fluid  ">
+          <a class="navbar-brand txthover" href="./index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+          </svg>Venus</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse px-5 " id="navbarNavAltMarkup ">
+            <div class="navbar-nav navitems">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">FAQ</a>
+              <a class="nav-link disabled" aria-disabled="true">Supporters</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+      <div class="container my-5 pt-5 width100">
+        <div class="position-relative p-5 text-center text-muted bg-body border-dashed rounded-5">
+        <br>
+        <br>
+        <br>
+          <h1 class="text-body-emphasis"> The QR-Code Generator for Links By Venus Generators</h1>
+          <br>
+          <p class="col-lg-6 mx-auto mb-4">
+           The best QR Code generator ever to exist. It is easy, simple and fast. Just click or Tap your link and you are good to go
+          </p>
+          <br>
+         
+          <p style="font-weight: bold;">
+            NB: This is a link QR Code generator. It takes in only links
+          </p>
+          <br>
+          <button class="btn btn-default px-5 mb-5 disabled" type="button">
+            Need Help?
+          </button>
+        </div>
+      </div>
+
+
+
+
+
+
+
+     <div class="container my-5 pt-5 centerdiv">
+        <h2 id="h2center"> Enter your hyperlink:</h2>
+        <form id="qr-form" action="/generate" method="post">
+
+        <input type="text" placeholder="Enter your link" id="input" name="urls">
+    
+        </div>
+    <div class=" centerdivfora">
+        <button type="submit" id="button">Generate</button>
+        
+</div>
+</form>
+<p style="font-weight: bolder; text-align: center; margin-top: 25px;">
+    NB: Your QR Image will be shown below.
+</p>
+<br>
+<br>
+
+
+<div id="Qrcontainer" style="display: flex; justify-content: center;"></div>
+
+
+
+
+
+
+<footer class="py-3 my-4"></footer>
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2024 <i>Venus</i>, Inc</p>
+  </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+
+    </script>
+</body>
+</html>
