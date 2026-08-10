@@ -1,2 +1,2 @@
-# Qrcodegenerator
+# Qrcodegenerator.
  
