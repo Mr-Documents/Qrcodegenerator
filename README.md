@@ -1,3 +1,3 @@
-# Qrcodegenerator.
-Venus Generator
+# Qrcodegenerator
+By Venus Generator
  
